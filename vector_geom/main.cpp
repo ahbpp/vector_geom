@@ -7,9 +7,29 @@
 //
 
 #include <iostream>
+#include "vec_geom.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+using namespace geom_vector;
+
+int main() {
+    int n;
+    cin >> n;
+    vector a(n);
+    vector b(n);
+    for (int i = 0; i < n; i++)
+    {
+        a.set(i, i + 3);
+        b.set(i, 6 - i);
+    }
+    cout << a[0] << endl;
+    -a;
+    -b;
+    -(a + b);
+    -(a - b);
+    cout << a * b << endl;
+    cout << abs(a) << endl;
+    -(a ^ b);
+    -(a * 3);
     return 0;
 }

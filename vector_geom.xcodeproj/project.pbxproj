@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A54A7991E566CD800007C7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A54A7981E566CD800007C7D /* main.cpp */; };
+		4A54A7A31E566D4300007C7D /* vec_geom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A54A7A11E566D4300007C7D /* vec_geom.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		4A54A7951E566CD800007C7D /* vector_geom */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vector_geom; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A54A7981E566CD800007C7D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4A54A7A11E566D4300007C7D /* vec_geom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec_geom.cpp; sourceTree = "<group>"; };
+		4A54A7A21E566D4300007C7D /* vec_geom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec_geom.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				4A54A7981E566CD800007C7D /* main.cpp */,
+				4A54A7A11E566D4300007C7D /* vec_geom.cpp */,
+				4A54A7A21E566D4300007C7D /* vec_geom.hpp */,
 			);
 			path = vector_geom;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A54A7A31E566D4300007C7D /* vec_geom.cpp in Sources */,
 				4A54A7991E566CD800007C7D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

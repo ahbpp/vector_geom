@@ -10,6 +10,9 @@
 #define vec_geom_hpp
 
 #include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 namespace geom_vector {
     class vector {
@@ -28,7 +31,8 @@ namespace geom_vector {
         vector operator + (const vector &that);
         vector operator - (const vector &that);
         vector operator ^ (const vector &that);
-        void operator - ();
+        friend ostream& operator<<(ostream& res, const vector &a);
+        friend istream& operator>>(istream& in, const vector &a);
     };
 }
 

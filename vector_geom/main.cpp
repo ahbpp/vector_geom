@@ -17,19 +17,12 @@ int main() {
     cin >> n;
     vector a(n);
     vector b(n);
-    for (int i = 0; i < n; i++)
-    {
-        a.set(i, i + 3);
-        b.set(i, 6 - i);
-    }
+    cin >> a >> b;
     cout << a[0] << endl;
-    -a;
-    -b;
-    -(a + b);
-    -(a - b);
+    cout << a << b;
+    cout << (a + b) << (a - b);
     cout << a * b << endl;
     cout << abs(a) << endl;
-    -(a ^ b);
-    -(a * 3);
+    cout << (a ^ b) << (a * 3);
     return 0;
 }

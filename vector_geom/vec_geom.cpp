@@ -47,6 +47,23 @@ namespace geom_vector {
         sum = sqrt(sum);
         return sum;
     }
+    ostream& operator<<(ostream& res, const vector &a)
+    {
+        for (int i = 0; i < a.n; i++)
+        {
+            cout << a.coor[i] << " ";
+        }
+        res << endl;
+        return res;
+    }
+    istream& operator>>(istream& in, const vector &a)
+    {
+        for (int i = 0; i < a.n; i++)
+        {
+            in >> a.coor[i];
+        }
+        return in;
+    }
 }
 float vector::operator * (const vector &that)
 {
@@ -97,15 +114,6 @@ vector vector::operator ^ (const vector &that) //возможно только �
         res.coor[2] = this->coor[0] * that.coor[1] - this->coor[1] * that.coor[0];
         return res;
     }
-}
-void vector::operator - ()
-{
-    for (int i = 0; i < this->n; i++)
-    {
-        cout << this->coor[i] << " ";
-    }
-    cout << endl;
-
 }
 
 

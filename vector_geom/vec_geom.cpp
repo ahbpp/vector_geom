@@ -102,7 +102,7 @@ vector vector::operator - (const vector &that)
     }
     return res;
 }
-vector vector::operator ^ (const vector &that) //возможно только для трех
+vector vector::operator ^ (const vector &that) 
 {
     if (this->n != 3)
     {
